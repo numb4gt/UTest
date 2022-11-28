@@ -64,7 +64,7 @@ namespace AircompanyTests.Tests
             bool nextPlaneMaxLoadCapacityIsHigherThanCurrent = true;
             for (int i = 0; i < planesSortedByMaxLoadCapacity.Count - 1; i++)
             {
-                if (planesSortedByMaxLoadCapacity[i].MAXLoadCapacity() > planesSortedByMaxLoadCapacity[i + 1].MAXLoadCapacity())
+                if (planesSortedByMaxLoadCapacity[i].GetMaxLoadCapacity() > planesSortedByMaxLoadCapacity[i + 1].GetMaxLoadCapacity())
                 {
                     nextPlaneMaxLoadCapacityIsHigherThanCurrent = false;
                 }
