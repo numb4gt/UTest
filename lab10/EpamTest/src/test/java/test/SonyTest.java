@@ -9,16 +9,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import page.SonyPagePF;
 import page.SonyHomePagePF;
 
-public class SonyTest {
-    private WebDriver driver;
-
-    @BeforeEach
-    public void initializeDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\Desktop\\9-10\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-    }
+public class SonyTest extends CommonConditions {
+//    private WebDriver driver;
+//
+//    @BeforeEach
+//    public void initializeDriver() {
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\Desktop\\ВУЗ\\3 курс\\UTest\\lab10\\chromedriver.exe");
+//        driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//        driver.manage().window().maximize();
+//    }
 
     @Test
     void openSalesPageSony()
